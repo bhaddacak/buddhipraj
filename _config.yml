@@ -1,7 +1,34 @@
-title: Silaprat Project
-description: Understanding Buddhism with critical thinking
+title: ศิลาปราชญ์
+description: เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล
+url: "https://bhaddacak.github.io/silaprat"
 theme: just-the-docs
 color_scheme: dark
+search_enabled: true
+search:
+  tokenizer_separator: /[\s\-\(\)/]+/
+back_to_top: true
+back_to_top_text: "กลับด้านบน"
 
-url: https://bhaddacak.github.io/silaprat
+footer_content: "Copyright &copy; 2023 <a href=\"https://bhaddacak.github.io\">J.R. Bhaddacak</a>, licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\">CC BY-NC-ND 4.0</a>"
 
+last_edit_timestamp: true
+last_edit_time_format: "%e %B %Y"
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  remark:
+    color: blue
+  remember:
+    title: ข้อควรจำ
+    color: green
+  question:
+    title: คำถาม
+    color: purple
+  warning:
+    title: ระวัง
+    color: red
+
+plugins:
+  - jekyll-seo-tag

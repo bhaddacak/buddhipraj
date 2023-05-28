@@ -1,0 +1,20 @@
+// custom setup code goes here
+
+@font-face
+  font-family: 'Arundina Pali Sans'
+  src: local('Arundina Pali Sans'), local('ArundinaPaliSans'), url('/assets/fonts/ArundinaPaliSans.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Arundina Pali Sans'
+  src: local('Arundina Pali Sans Bold'), local('ArundinaPaliSans-Bold'), url('/assets/fonts/ArundinaPaliSans-Bold.woff') format('woff')
+  font-weight: bold
+  font-style: normal
+
+@font-face
+  font-family: 'Arundina Pali Sans Mono'
+  src: local('Arundina Pali Sans Mono'), local('ArundinaPaliSansMono'), url('/assets/fonts/ArundinaPaliSansMono.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+

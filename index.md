@@ -14,7 +14,7 @@ last_modified_date: 2023-05-28 12:00:00 +0700
 เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล โดย จ. ร. ภัททจักร 
 </td>
 <td style="text-align:center;">
-<img src="/assets/images/silaprat-logo.png" />
+<img src="{{ '/assets/images/silaprat-logo.png' | relative_url }}" />
 </td>
 </tr>
 </tbody>

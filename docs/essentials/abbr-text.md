@@ -28,5 +28,5 @@ last_modified_date: 2023-05-21 12:00:00 +0700
 | Vism | Visuddhimagga |
 
 {: .remark }
-คำย่อที่ใช้ในการเรียนบาลีให้ดูที่ [คำย่อทางไวยากรณ์](/docs/pali/abbr-pali.html)
+คำย่อที่ใช้ในการเรียนบาลีให้ดูที่ [คำย่อทางไวยากรณ์]({{ '/docs/pali/abbr-pali.html' | relative_url }})
 

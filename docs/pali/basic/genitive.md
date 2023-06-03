@@ -4,7 +4,7 @@ title: ความเป็นเจ้าของ
 parent: การแต่งประโยคขั้นต้น
 grand_parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 30
-last_modified_date: 2023-05-28 12:00:00 +0700
+last_modified_date: 2023-05-31 12:00:00 +0700
 ---
 
 # {{ page.title  }}
@@ -46,7 +46,7 @@ last_modified_date: 2023-05-28 12:00:00 +0700
 > - dārikāya sundarā hatthā santi<br>= A girl's beautiful hands exist.<br>= A girl has beautiful hands.
 > - dārikānaṃ sundarā hatthā santi<br>= Girls' beautiful hands exist.<br>= Girls have beautiful hands.
 > - paññāvantassa/paññāvato dārakassa atthavaṃ potthakaṃ atthi<br>= A wise boy's useful book exists.<br>= A wise boy has a useful book.
-> - paññāvantānaṃ/paññāvataṃ dārakānaṃ atthavati potthakāni santi<br>= Wise boys' useful books exist.<br>= Wise boys have useful books.
+> - paññāvantānaṃ/paññāvataṃ dārakānaṃ atthavanti potthakāni santi<br>= Wise boys' useful books exist.<br>= Wise boys have useful books.
 > - mahato balavato hatthino dīghāni sundarāni dantāni santi<br>= A big, strong elephant has long, beautiful ivories.<br>(จะใช้ mahantassa balavantassa hatthissa ... ก็ได้)
 
 จุดที่ควรสังเกตคือ ในประโยคแรกประธานของประโยคคือ potthakaṃ (nom.) คำกริยาจึงต้องสอดคล้องกับตัวนี้ (atthi) ส่วน dārakassa (gen.) ทำหน้าที่เหมือนเป็นบทขยายของประธาน ซึ่งอาจจะเป็นพหูพจน์ก็ได้อยู่ที่ความหมายที่ต้องการจะสื่อ สามประโยคสุดท้ายแสดงให้เห็นว่า**บทขยายของนามใดต้องมีรูปตรงกับนามนั้น** อันนี้เป็นกฎที่ต้องจำไว้

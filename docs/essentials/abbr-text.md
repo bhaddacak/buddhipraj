@@ -3,7 +3,7 @@ layout: default
 title: คำย่อที่ใช้
 parent: ความรู้จำเป็นเบื้องต้น
 nav_order: 95
-last_modified_date: 2023-05-21 12:00:00 +0700
+last_modified_date: 2023-06-01 12:00:00 +0700
 ---
 
 # {{ page.title  }}
@@ -25,6 +25,7 @@ last_modified_date: 2023-05-21 12:00:00 +0700
 | Sadd Dhā | Saddanītipakaraṇaṃ Dhātumālā |
 | Sadd Pad | Saddanītipakaraṇaṃ Padamālā |
 | Sadd Sut | Saddanītipakaraṇaṃ Suttamālā |
+| SSag | Sagāthāvagga, Saṃyuttanikāya, Suttapiṭaka |
 | Vism | Visuddhimagga |
 
 {: .remark }

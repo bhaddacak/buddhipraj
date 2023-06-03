@@ -4,7 +4,7 @@ title: การตั้งคำถามเบื้องต้น
 parent: การแต่งประโยคขั้นต้น
 grand_parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 70
-last_modified_date: 2023-05-28 12:00:00 +0700
+last_modified_date: 2023-06-02 12:00:00 +0700
 ---
 
 # {{ page.title  }}
@@ -136,5 +136,31 @@ last_modified_date: 2023-05-28 12:00:00 +0700
 > 
 > การใช้ ins. อาจจะหมายถึงสิ่งหรือบุคคลที่ทำกริยาร่วมกันก็ได้ เช่น
 > - kena saddhiṃ tvaṃ ayaṃ sūpaṃ pacasi?<br>= With whom do you cook this curry?
+
+## What/How about?
+
+เพื่อเราจะได้มีอุปกรณ์มากขึ้นในการตั้งคำถาม คำที่ควรรู้อีกคำหนึ่งคือ kīdisa อาจจะใช้เพื่อถามว่า what about? หรือ how about? หรือ what kind? หรือ what like? คำถามอย่างนี้ใช้มากเหมือนกันในบทสนทนา การใช้งานก็ไม่ยากแค่แปรรูป kīdisa เป็นบทขยายของสิ่งที่ต้องการถาม ดูตัวอย่างข้างล่าง
+
+> - kīdiso tava ratho hoti?<br>= How about your car?<br>= What is the kind of your car?<br>= What does your car look like?
+> - kīdisā sā kaññā hoti?<br>= What does that girl look like?<br>= What kind of girl is that?
+> - kīdisaṃ idaṃ potthakaṃ hoti?<br>= What kind of book is this?
+> 
+> ตัวอย่างในคัมภีร์เช่น
+> - Kīdiso tesaṃ vipāko, samparāyo ca kīdiso[^ssag49]<br>= What kind of their [karmic] result, and what kind of future state?
+
+[^ssag49]: SSag 1.49
+
+{: .remember }
+> คำเหล่านี้ใช้เป็นบทขยาย
+> - kīdisa = what/how about?, what kind?, what like?
+> - tādisa = that kind of, such
+> - yādisa = which kind of
+
+คำในชุดนี้ยังมี tādisa (that kind of, such) และ yādisa (จะพูดถึงในเรื่องโครงสร้าง ya-ta) ที่ใช้อธิบายลักษณะของสิ่งต่าง ๆ การใช้งานก็คล้ายกับ kīdisa แต่ใช้ในประโยคบอกเล่า เช่น
+
+> - tādiso paññāvā dārako tādisaṃ thūlaṃ potthakaṃ paṭhati<br>= Such a wise boy reads such a big book.<br>= That kind of wise boy reads that kind of big book.
+> - kena tvaṃ tādisena rathena nagaraṃ gacchasi?<br>= How do you go to town with such a car?
+> - tādismā sā rodati<br>= From such a reason, she cries.
+> - daḷiddā tādisesu appakesu gehesu vasanti<br>= Poor people live in such small houses.
 
 ## เชิงอรรถ

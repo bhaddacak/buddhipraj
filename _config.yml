@@ -3,6 +3,7 @@ description: เพื่อความเข้าใจพุทธศาส�
 url: "https://bhaddacak.github.io/silaprat"
 theme: just-the-docs
 color_scheme: dark
+theme_switch: true
 search_enabled: true
 search:
   tokenizer_separator: /[\s\-\(\)/]+/

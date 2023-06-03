@@ -4,7 +4,7 @@ title: นามกับบทขยาย
 parent: การแต่งประโยคขั้นต้น
 grand_parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 15
-last_modified_date: 2023-05-27 12:00:00 +0700
+last_modified_date: 2023-05-31 12:00:00 +0700
 ---
 
 # {{ page.title  }}
@@ -74,7 +74,7 @@ last_modified_date: 2023-05-27 12:00:00 +0700
 | **nom. f. sg.** | atthavatī, atthavantī |
 | **nom. f. pl.** | atthavatiyo, atthavantiyo |
 | **nom. nt. sg.** | atthavaṃ |
-| **nom. nt. pl.** | atthavati, atthavantāni |
+| **nom. nt. pl.** | atthavanti, atthavantāni |
 
 โดยความหมาย atthavantu แปลว่าผู้มีประโยชน์ สามารถใช้เป็นคำนามโดยรูป m. และ f. แทนคนที่มีประโยชน์ (one full of benefit) ส่วนรูป nt. แทนสิ่งที่มีประโยชน์ (thing full of benefit) ถ้าใช้เป็นบทขยายก็จะแปลว่า มีประโยชน์ (useful หรือ full of benefit) ตัวอย่างได้ยกไว้แล้วข้างบน
 
@@ -86,7 +86,7 @@ last_modified_date: 2023-05-27 12:00:00 +0700
 > - paññāvatī dārikā = (There is) a wise girl.
 > - paññāvatiyo dārikāyo = (There are) wise girls.
 > - dhanavaṃ kulaṃ = (There is) a rich family.
-> - dhanavati kulāni = (There are) rich families.
+> - dhanavanti kulāni = (There are) rich families.
 >
 > เมื่อใช้เป็นคำนาม:
 > - dhanavā = (There is) a rich man.

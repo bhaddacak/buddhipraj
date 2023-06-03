@@ -4,7 +4,7 @@ title: เป็น/อยู่/คือ
 parent: การแต่งประโยคขั้นต้น
 grand_parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 25
-last_modified_date: 2023-05-28 12:00:00 +0700
+last_modified_date: 2023-05-31 12:00:00 +0700
 ---
 
 # {{ page.title  }}
@@ -50,7 +50,7 @@ last_modified_date: 2023-05-28 12:00:00 +0700
 > - tvaṃ dhanavā/dhanavatī hosi<br>= You are rich.<br>= You are a rich person.
 > - tumhe paññāvanto/paññāvatiyo hotha<br>= You are wise.<br>= You are wise people.
 > - taṃ atthavaṃ potthakaṃ hoti<br>= It is a useful book.<br>= That is a useful book.
-> - tāni atthavati potthakāni honti<br>= They/Those are useful books.
+> - tāni atthavanti potthakāni honti<br>= They/Those are useful books.
 
 ทั้งหมดนี้สามารถแทนกริยาชุด hoti ด้วย ชุดของ bhavati หรือ atthi ได้โดยมีความหมายเดียวกัน โดยทั่วไปการเปลี่ยนตำแหน่งไม่มีผลต่อความหมาย (แต่มีผลต่อการเน้น) แต่บางครั้งทำให้ความหมายเปลี่ยนไปเล็กน้อย ดังตัวอย่างดังนี้
 

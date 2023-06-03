@@ -3,7 +3,7 @@ title: หน้าแรก
 layout: home
 nav_order: 1
 permalink: /
-last_modified_date: 2023-05-28 12:00:00 +0700
+last_modified_date: 2023-05-30 12:00:00 +0700
 ---
 <center>
 <table>
@@ -47,5 +47,5 @@ last_modified_date: 2023-05-28 12:00:00 +0700
 จ. ร. ภัททจักร จบการการศึกษาระดับปริญญาเอกสาขาศาสนศึกษาในหลักสูตรนานาชาติ มีความสนใจพุทธศาสนาเถรวาทในฐานะผลผลิตทางวัฒนธรรม นอกจากนี้ยังมีพื้นฐานทางวิทยาศาสตร์คอมพิวเตอร์และเป็นโปรแกรมเมอร์มืออาชีพ (แต่ไม่ได้อยู่ในอุตสาหกรรมนั้น) ผลงานสำคัญคือโปรแกรมเรียนรู้และวิจัยภาษาบาลี [`Pāli Platform`](https://bhaddacak.github.io/paliplatform) คู่มือเรียนภาษาบาลียุคใหม่ *Pāli for New Learners* [เล่ม 1](https://bhaddacak.github.io/palicon) กับ [เล่ม 2](https://bhaddacak.github.io/palitex) ผลงานจากดุษฎีนิพนธ์ [*Buddhist Discourses in Thai Merit-Making Rituals*](https://bhaddacak.github.io/buddisthai) และผลงานอื่น ๆ ตามที่ปรากฏในเว็บไซต์ [bhaddacak.github.io](https://bhaddacak.github.io)
 
 ## เกี่ยวกับเว็บไซต์
-โครงการศิลาปราชญ์ใช้โฮสต์ของ Github ดูแลโดย [bhaddacak](https://github.com/bhaddacak) ตัวช่วยสำคัญในการสร้างหน้าเว็บคือ Jekyll กับเทคโนโลยี Markdown ธีมที่ใช้คือ [`Just the Docs`](https://just-the-docs.github.io/just-the-docs/) มีความเรียบง่ายสวยงามและปรับแต่งได้สะดวก ฟอนต์ที่ใช้คือ Arundina Pali Sans ดัดแปลงโดยผู้จัดทำจาก [Arundina Sans](https://github.com/tlwg/fonts-arundina) โดยเพิ่มตัวอักษรที่จำเป็นในการแสดงอักษรบาลีโรมัน มีความชัดเจน อ่านง่ายและสวยงาม (อักษรภาษาอังกฤษของฟอนต์นี้มีแบบตรงกับ [DejaVu Sans](https://dejavu-fonts.github.io)) โปรแกรมช่วยค้นหาคือ [`lunr`](https://lunrjs.com) สามารถค้นหาคำได้ทั้งภาษาไทยและอังกฤษ การค้นคำภาษาไทยอาจจะมีปัญหาเรื่องการกำหนดคำบ้าง เช่นถ้าค้น "พุทธเจ้า" ไม่พบ ให้ค้น "\*พุทธเจ้า" หรือ "\*พุทธเจ้า\*" แทน
+โครงการศิลาปราชญ์ใช้โฮสต์ของ Github ดูแลโดย [bhaddacak](https://github.com/bhaddacak) ตัวช่วยสำคัญในการสร้างหน้าเว็บคือ Jekyll กับเทคโนโลยี Markdown ธีมที่ใช้คือ [`Just the Docs`](https://just-the-docs.github.io/just-the-docs/) มีความเรียบง่ายสวยงามและปรับแต่งได้สะดวก ฟอนต์ที่ใช้คือ Arundina Pali Sans ดัดแปลงโดยผู้จัดทำจาก [Arundina Sans](https://github.com/tlwg/fonts-arundina) โดยเพิ่มตัวอักษรที่จำเป็นในการแสดงอักษรบาลีโรมัน มีความชัดเจน อ่านง่ายและสวยงาม (อักษรภาษาอังกฤษของฟอนต์นี้มีแบบตรงกับ [DejaVu Sans](https://dejavu-fonts.github.io)) โปรแกรมช่วยค้นหาคือ [`lunr`](https://lunrjs.com) สามารถค้นหาคำได้ทั้งภาษาไทยและอังกฤษ การค้นคำภาษาไทยอาจจะมีปัญหาเรื่องการกำหนดคำบ้าง เช่นถ้าค้น "พุทธเจ้า" ไม่พบ ให้ค้น "\*พุทธเจ้า" หรือ "\*พุทธเจ้า\*" แทน ผู้ที่ต้องการไฟล์ pdf ของเนื้อหาทั้งหมด (อาจจะไม่ทันสมัยเท่าในเว็บ) ให้ดูที่ [github.com/bhaddacak/silaprat/releases](https://github.com/bhaddacak/silaprat/releases)
 

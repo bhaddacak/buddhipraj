@@ -49,7 +49,7 @@ last_modified_date: 2023-06-11 12:00:00 +0700
 ## เกี่ยวกับเว็บไซต์
 โครงการศิลาปราชญ์ใช้โฮสต์ของ Github ดูแลโดย [bhaddacak](https://github.com/bhaddacak) ตัวช่วยสำคัญในการสร้างหน้าเว็บคือ Jekyll กับเทคโนโลยี Markdown ธีมที่ใช้คือ [`Just the Docs`](https://just-the-docs.github.io/just-the-docs/) มีความเรียบง่ายสวยงามและปรับแต่งได้สะดวก ฟอนต์ที่ใช้คือ Arundina Pali Sans ดัดแปลงโดยผู้จัดทำจาก [Arundina Sans](https://github.com/tlwg/fonts-arundina) โดยเพิ่มตัวอักษรที่จำเป็นในการแสดงอักษรบาลีโรมัน มีความชัดเจน อ่านง่ายและสวยงาม (อักษรภาษาอังกฤษของฟอนต์นี้มีแบบตรงกับ [DejaVu Sans](https://dejavu-fonts.github.io)) โปรแกรมช่วยค้นหาคือ [`lunr`](https://lunrjs.com) สามารถค้นหาคำได้ทั้งภาษาไทยและอังกฤษ การค้นคำภาษาไทยอาจจะมีปัญหาเรื่องการกำหนดคำบ้าง เช่นถ้าค้น "พุทธเจ้า" ไม่พบ ให้ค้น "\*พุทธเจ้า" หรือ "\*พุทธเจ้า\*" แทน ผู้ที่ต้องการไฟล์ pdf ของเนื้อหาทั้งหมด (อาจจะไม่ทันสมัยเท่าในเว็บ) ให้ดูที่ [github.com/bhaddacak/silaprat/releases](https://github.com/bhaddacak/silaprat/releases)
 
-## เกี่ยวกับลิขสิทธิ์ (About license)
+## เกี่ยวกับลิขสิทธิ์ (About the license)
 ในส่วนเนื้อหาลิขสิทธิ์เป็นของผู้จัดทำภายใต้ [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) คือสามารถใช้และเผยแพร่ได้อย่างอิสระโดยต้องระบุที่มา ห้ามใช้ในเชิงพาณิชย์ และห้ามดัดแปลง ในส่วนของโปรแกรมที่ทำเพิ่มจากโครงสร้างพื้นฐาน ไม่ว่าจะเป็นข้อมูลที่สร้างขึ้นโดยผู้จัดทำ โปรแกรมภาษา JavaScript และอื่น ๆ ขอสงวนลิขสิทธิ์ภายใต้ [GNU General Public License](https://www.gnu.org/licenses/), version 3 คือสามารถนำไปใช้และเผยแพร่ได้โดยต้องเปิดเผยส่วนของข้อมูลและโปรแกรมทั้งหมดด้วย (รวมทั้งเงื่อนไขอื่น ๆ ที่ระบุไว้ในใบอนุญาต)
 
 {: .remark }

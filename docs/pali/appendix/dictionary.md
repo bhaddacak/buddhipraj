@@ -27,7 +27,7 @@ last_modified_date: 2023-06-11 12:00:00 +0700
 </span>
 </div>
 <div style="padding: 3px">
-<input type="text" id="wordinput" placeholder="Search for ..." size="34" onKeyDown="wordInputKeyDown();">&nbsp;<span class="fs-3"><button type="button" class="btn" onClick="wordClear();">Clear</button>&nbsp;<button type="button" class="btn" onClick="compute();">Compute</button></span>
+<input type="text" id="wordinput" placeholder="Search for ..." size="34" onKeyDown="wordInputKeyDown();">&nbsp;<span class="fs-3"><button type="button" class="btn" onClick="wordClear();">Clear</button>&nbsp;<button type="button" class="btn" onClick="compute();">Search</button></span>
 </div>
 <div>
 <span><input type="checkbox" id="showdetails" onChange="compute();">&nbsp;<label for="showdetails">Show details</label></span>&nbsp;

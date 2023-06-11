@@ -3,7 +3,7 @@ layout: default
 title: ความสำคัญของเหตุผล
 parent: ความรู้จำเป็นเบื้องต้น
 nav_order: 10
-last_modified_date: 2023-05-26 12:00:00 +0700
+last_modified_date: 2023-06-12 12:00:00 +0700
 ---
 
 # {{ page.title  }}
@@ -72,7 +72,7 @@ last_modified_date: 2023-05-26 12:00:00 +0700
 การใช้เหตุผล (reasoning) = การคิด (thinking) = ระบบ 1 + ระบบ 2<br>
 การคิดอย่างมีเหตุผล = critical thinking = ระบบ 2
 
-เนื่องจากการคิดอย่างมีเหตุผลไม่ได้เกิดขึ้นโดยอัตโนมัติ ฉะนั้นเราทุกคนจะต้องฝึกเพื่อเราจะได้ใช้มันอย่างมีประสิทธิภาพสูงสุด ทักษะการคิดอย่างมีเหตุผลเป็นสิ่งจำเป็นอย่างยิ่งต่อการศึกษาในโครงการศิลาปราชญ์นี้ (ความจริงทักษะนี้มีความจำเป็นอย่างยิ่งในสถานการณ์โลกปัจจุบัน) หากปราศจากทักษะนี้ท่านทั้งหลายจะไม่มีทางเข้าใจพุทธศาสนาด้วยตนเองได้เลย นอกจากจะรับเอาความคิดความเชื่อของคนอื่นที่ยัดเยียดให้
+เนื่องจากการคิดอย่างมีเหตุผลไม่ได้เกิดขึ้นโดยอัตโนมัติ ฉะนั้นเราทุกคนจะต้องฝึกเพื่อเราจะได้ใช้มันอย่างมีประสิทธิภาพสูงสุด ทักษะการคิดอย่างมีเหตุผลเป็นสิ่งจำเป็นอย่างยิ่งต่อการศึกษาในโครงการนี้ (ความจริงทักษะนี้มีความจำเป็นอย่างยิ่งในสถานการณ์โลกปัจจุบัน) หากปราศจากทักษะนี้ท่านทั้งหลายจะไม่มีทางเข้าใจพุทธศาสนาด้วยตนเองได้เลย นอกจากจะรับเอาความคิดความเชื่อของคนอื่นที่ยัดเยียดให้
 
 > Becoming a critical thinker requires that you learn to observe, monitor, analyze, assess, and reconstruct thinking of many sorts in many dimensions of human life. It requires building important habits of mind. It has implications for every act that takes place in your mind. It requires a special form of dedication and perseverance, honesty and integrity. It can be done only if taken seriously and pursued throughout a lifetime.[^critical-thinker]
 > 

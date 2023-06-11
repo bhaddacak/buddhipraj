@@ -3,10 +3,10 @@ layout: default
 title: คำย่อที่ใช้
 parent: ความรู้จำเป็นเบื้องต้น
 nav_order: 95
-last_modified_date: 2023-06-01 12:00:00 +0700
+last_modified_date: 2023-06-04 12:00:00 +0700
 ---
 
-# {{ page.title  }}
+# {{ page.title }}
 {: .no_toc }
 
 | คำย่อ | หมายถึง |
@@ -21,6 +21,7 @@ last_modified_date: 2023-06-01 12:00:00 +0700
 | MN | Majjhimanikāya (with sutta number) |
 | Mv | Mahāvagga, Vinayapiṭaka |
 | Paṭi | Paṭisambhidāmagga, Khuddakanikāya, Suttapiṭaka |
+| Rūpa | Padarūpasiddhi |
 | Sadd | Saddanītipakaraṇaṃ Suttamālā (with sutta no.) |
 | Sadd Dhā | Saddanītipakaraṇaṃ Dhātumālā |
 | Sadd Pad | Saddanītipakaraṇaṃ Padamālā |

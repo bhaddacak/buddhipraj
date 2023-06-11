@@ -4,10 +4,10 @@ title: สรุปการแปรรูปนาม
 parent: การแต่งประโยคขั้นต้น
 grand_parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 80
-last_modified_date: 2023-05-28 12:00:00 +0700
+last_modified_date: 2023-06-09 12:00:00 +0700
 ---
 
-# {{ page.title  }}
+# {{ page.title }}
 {: .no_toc }
 
 <details open markdown="block">
@@ -84,31 +84,28 @@ last_modified_date: 2023-05-28 12:00:00 +0700
 </select>
 <span>
 	<input type="radio" id="gendm" name="gender-radio" value="m" onChange="pronChange();" checked>
-	<label for="gendm">m.</label>
+	<label for="gendm">masculine</label>
 	<input type="radio" id="gendf" name="gender-radio" value="f" onChange="pronChange();">
-	<label for="gendf">f.</label>
+	<label for="gendf">feminine</label>
 	<input type="radio" id="gendn" name="gender-radio" value="n" onChange="pronChange();">
-	<label for="gendn">nt.</label>
+	<label for="gendn">neuter</label>
 </span>
 </div>
 
 {% include decl_table.html number="2" %}
 
 <script>
-let def_noun = "purisa;a,m";
-let def_pron = "amha";
 function nounChange() {
-	let opt = document.getElementById("noun");
-	let ind = opt.selectedIndex;
+	const opt = document.getElementById("noun");
+	const ind = opt.selectedIndex;
 	updateDeclTableNoun(opt.options[ind].value);
 }
 function pronChange() {
-	let opt = document.getElementById("pron");
-	let ind = opt.selectedIndex;
+	const opt = document.getElementById("pron");
+	const ind = opt.selectedIndex;
 	updateDeclTablePron(opt.options[ind].value);
 }
-function updateDeclTableNoun(word) {
-	let input = word === undefined ? def_noun : word;
+function updateDeclTableNoun(input) {
 	let termgen = input.split(";");
 	let term = termgen[0];
 	let group = termgen[1];
@@ -130,34 +127,33 @@ function updateDeclTableNoun(word) {
 }
 function getPronGender() {
 	let result = 'm';
-	let elem = document.getElementById("gendm");
-	let elef = document.getElementById("gendf");
-	let elen = document.getElementById("gendn");
+	const elem = document.getElementById("gendm");
+	const elef = document.getElementById("gendf");
+	const elen = document.getElementById("gendn");
 	if (elef.checked)
 		result = 'f';
 	else if (elen.checked)
 		result = 'n';
 	return result;
 }
-function updateDeclTablePron(word) {
-	let term = word === undefined ? def_pron : word;
-	let selgen = getPronGender();
-	let lastCh = term === "amu" ? 'u' : selgen === 'f' ? 'ā' : 'a';
-	let group = term + ";" + lastCh + "," + selgen;
-	let cutNum = term.endsWith("ṃ") ? 2 : 1;
-	let stem = term.slice(0, term.length - cutNum);
+function updateDeclTablePron(term) {
+	const selgen = getPronGender();
+	const lastCh = term === "amu" ? 'u' : selgen === 'f' ? 'ā' : 'a';
+	const group = term + ";" + lastCh + "," + selgen;
+	const cutNum = term.endsWith("ṃ") ? 2 : 1;
+	const stem = term.slice(0, term.length - cutNum);
 	const tnumber = 2;
 	for (let i = 0; i < case_abbr.length; i++) {
  		let cas = case_abbr[i];
 		for (let g = 0; g < gender_abbr.length; g++) {
-			let gen = gender_abbr[g];
-			let elem = document.getElementById(cas+"_"+gen+tnumber);
+			const gen = gender_abbr[g];
+			const elem = document.getElementById(cas+"_"+gen+tnumber);
 			elem.innerHTML = getPronounDeclensionStr(stem, group, i, g);
 		}
 	}
 }
-updateDeclTableNoun();
-updateDeclTablePron();
+updateDeclTableNoun("purisa;a,m");
+updateDeclTablePron("amha");
 </script>
 
 ## เชิงอรรถ

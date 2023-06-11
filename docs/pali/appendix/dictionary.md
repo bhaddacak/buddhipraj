@@ -27,7 +27,7 @@ last_modified_date: 2023-06-11 12:00:00 +0700
 </span>
 </div>
 <div style="padding: 3px">
-<input type="text" id="wordinput" placeholder="Search for ..." size="34" onKeyDown="wordInputKeyDown();">&nbsp;<span class="fs-3"><button type="button" class="btn" onClick="wordClear();">Clear</button>&nbsp;<button type="button" class="btn" onClick="compute();">Search</button></span>
+<input type="text" id="wordinput" placeholder="Search for ..." size="34">&nbsp;<span class="fs-3"><button type="button" class="btn" onClick="wordClear();">Clear</button>&nbsp;<button type="button" class="btn" onClick="compute();">Search</button></span>
 </div>
 <div>
 <span><input type="checkbox" id="showdetails" onChange="compute();">&nbsp;<label for="showdetails">Show details</label></span>&nbsp;
@@ -39,17 +39,17 @@ const initList = [ "ak", "ag", "aṅ", "ac", "aj", "añ", "aṭ", "aḍ", "aṇ"
 const notfound = "Nothing found";
 let dict = [];
 let foundList = [];
-function wordInputKeyDown() {
+const input = document.getElementById("wordinput");
+input.addEventListener("keydown", wordInputKeyDown);
+function wordInputKeyDown(event) {
 	if (event.key === "Enter")
 		compute();
 }
 function insertChar(ch) {
-	const input = document.getElementById("wordinput");
 	input.value = input.value + ch;
 	input.focus();
 }
 function wordClear() {
-	const input = document.getElementById("wordinput");
 	input.value = "";
 	input.focus();
 	clearResult();
@@ -75,7 +75,6 @@ function clearResult() {
 	clearNode(result);
 }
 function compute() {
-	const input = document.getElementById("wordinput");
 	const result = document.getElementById("dictresult");
 	const inputWord = input.value.trim().toLowerCase();
 	clearResult();
@@ -106,7 +105,6 @@ function loadDict(initial) {
 }
 function showResult() {
 	const result = document.getElementById("dictresult");
-	const input = document.getElementById("wordinput");
 	const inputWord = input.value.trim().toLowerCase();
 	if (dict.length > 0) {
 		foundList = [];
@@ -117,9 +115,9 @@ function showResult() {
 				div.id = term;
 				foundList.push(dict[i]);
 				const ind = foundList.length - 1;
-				div.onclick = function() {
-					showDetail(ind);
-				};
+				div.addEventListener("click", function(event) {
+					showDetail(ind, event);
+				});
 				div.innerHTML = term;
 				div.style.cursor = "pointer";
 				result.appendChild(div);
@@ -141,11 +139,11 @@ function showResult() {
 		result.innerHTML = notfound;
 	}
 }
-function showDetail(index) {
+function showDetail(index, event) {
 	const item = foundList[index];
 	const termNode = document.getElementById(item.entry);
 	if (termNode.children.length > 0) {
-		if (event.target.id === item.entry) {
+		if (event.target === termNode) {
 			clearNode(termNode);
 			termNode.innerHTML = item.entry;
 		}

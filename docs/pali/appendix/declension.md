@@ -25,7 +25,7 @@ last_modified_date: 2023-06-10 12:00:00 +0700
 </span>
 </div>
 <div style="padding: 3px">
-<input type="text" id="wordinput" placeholder="Type in Roman Pāli" size="34" onKeyDown="wordInputKeyDown();">&nbsp;<span class="fs-3"><button type="button" class="btn" onClick="wordClear();">Clear</button>&nbsp;<button type="button" class="btn" onClick="compute();">Compute</button></span>
+<input type="text" id="wordinput" placeholder="Type in Roman Pāli" size="34">&nbsp;<span class="fs-3"><button type="button" class="btn" onClick="wordClear();">Clear</button>&nbsp;<button type="button" class="btn" onClick="compute();">Compute</button></span>
 </div>
 <div>
 <span style="padding: 3px">
@@ -63,23 +63,22 @@ irrn_child_list = {
 	"mātu": [ "cūlamātu", "dhītu", "duhitu", "bhātudhītu" ]
 };
 
-function wordInputKeyDown() {
+const input = document.getElementById("wordinput");
+input.addEventListener("keydown", wordInputKeyDown);
+function wordInputKeyDown(event) {
 	if (event.key === "Enter")
 		compute();
 }
 function insertChar(ch) {
-	const input = document.getElementById("wordinput");
 	input.value = input.value + ch;
 	input.focus();
 }
 function wordClear() {
-	const input = document.getElementById("wordinput");
 	input.value = "";
 	input.focus();
 	fillTable(1);
 }
 function compute() {
-	const input = document.getElementById("wordinput");
 	const inputWord = input.value.trim().toLowerCase();
 	if (inputWord.length >= 2) {
 		updateDeclTable(inputWord);

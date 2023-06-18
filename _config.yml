@@ -1,6 +1,10 @@
 title: อิสราศรม
 description: เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล
 url: "https://bhaddacak.github.io/israsom"
+jsassets_url: "https://bhaddacak.github.io/assets/js"
+ncped_url: "https://bhaddacak.github.io/assets/ncped"
+#jsassets_url: "http://localhost:4000/assets/external"
+#ncped_url: "http://localhost:4000/assets/external/ncped"
 theme: just-the-docs
 color_scheme: dark
 theme_switch: true

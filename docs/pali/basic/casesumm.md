@@ -83,12 +83,9 @@ last_modified_date: 2023-06-09 12:00:00 +0700
 	<option value="kiṃ">kiṃ</option>
 </select>
 <span>
-	<input type="radio" id="gendm" name="gender-radio" value="m" onChange="pronChange();" checked>
-	<label for="gendm">masculine</label>
-	<input type="radio" id="gendf" name="gender-radio" value="f" onChange="pronChange();">
-	<label for="gendf">feminine</label>
-	<input type="radio" id="gendn" name="gender-radio" value="n" onChange="pronChange();">
-	<label for="gendn">neuter</label>
+<input type="radio" id="gendm" name="gender-radio" value="m" onChange="pronChange();" checked><label for="gendm">masculine</label>
+<input type="radio" id="gendf" name="gender-radio" value="f" onChange="pronChange();"><label for="gendf">feminine</label>
+<input type="radio" id="gendn" name="gender-radio" value="n" onChange="pronChange();"><label for="gendn">neuter</label>
 </span>
 </div>
 

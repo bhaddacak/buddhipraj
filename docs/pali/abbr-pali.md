@@ -3,7 +3,7 @@ layout: default
 title: คำย่อทางไวยากรณ์
 parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 12
-last_modified_date: 2023-05-19 12:00:00 +0700
+last_modified_date: 2023-06-20 12:00:00 +0700
 ---
 
 # {{ page.title  }}
@@ -23,6 +23,6 @@ last_modified_date: 2023-05-19 12:00:00 +0700
 | m. | masculine | pulliṅga |
 | nom. | nominative case | paṭhamā |
 | nt. | neuter | napuṃsakaliṅga |
-| pl. | plural | pahuvacana |
+| pl. | plural | bahuvacana |
 | sg. | singular | ekavacana |
 | voc. | vocative case | ālapana |

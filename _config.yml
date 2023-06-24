@@ -3,7 +3,7 @@ description: เพื่อความเข้าใจพุทธศาส�
 url: "https://bhaddacak.github.io/israsom"
 jsassets_url: "https://bhaddacak.github.io/assets/js"
 ncped_url: "https://bhaddacak.github.io/assets/ncped"
-#jsassets_url: "http://localhost:4000/assets/external"
+#jsassets_url: "http://localhost:4000/assets/external/js"
 #ncped_url: "http://localhost:4000/assets/external/ncped"
 theme: just-the-docs
 color_scheme: dark
@@ -13,7 +13,10 @@ search:
   tokenizer_separator: /[\s\-\(\)/]+/
 back_to_top: true
 back_to_top_text: "กลับด้านบน"
-
+aux_links:
+  "bhaddacak.github.io":
+    - "https://bhaddacak.github.io"
+aux_links_new_tab: true
 footer_content: "Copyright &copy; 2023 <a href=\"https://bhaddacak.github.io\">J.R. Bhaddacak</a>, licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\">CC BY-NC-ND 4.0</a>"
 
 last_edit_timestamp: true

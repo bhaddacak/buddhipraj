@@ -1,0 +1,33 @@
+<div>
+<span class="fs-2">
+<button class="btn" onClick="insertChar('ā');">ā</button>
+<button class="btn" onClick="insertChar('ī');">ī</button>
+<button class="btn" onClick="insertChar('ū');">ū</button>
+<button class="btn" onClick="insertChar('ṅ');">ṅ</button>
+<button class="btn" onClick="insertChar('ñ');">ñ</button>
+<button class="btn" onClick="insertChar('ṭ');">ṭ</button>
+<button class="btn" onClick="insertChar('ḍ');">ḍ</button>
+<button class="btn" onClick="insertChar('ṇ');">ṇ</button>
+<button class="btn" onClick="insertChar('ḷ');">ḷ</button>
+<button class="btn" onClick="insertChar('ṃ');">ṃ</button>
+</span>
+</div>
+<div style="padding: 3px">
+<input type="text" id="textinput" placeholder="{{ include.placeholder }}" size="31">&nbsp;<span class="fs-3"><button class="btn" onClick="textInputClear();">Clear</button>&nbsp;<button class="btn" onClick="{{ include.function }}">{{ include.button }}</button></span>
+</div>
+<script>
+const textInputElem = document.getElementById("textinput");
+textInputElem.addEventListener("keydown", function(event) {
+	if (event.key === "Enter")
+		{{ include.function }}
+});
+function insertChar(ch) {
+	textInputElem.value = textInputElem.value + ch;
+	textInputElem.focus();
+}
+function textInputClear() {
+	textInputElem.value = "";
+	textInputElem.focus();
+	{{ include.after_clear }}
+}
+</script>

@@ -4,7 +4,7 @@ title: สรุปการแปรรูปนาม
 parent: การแต่งประโยคขั้นต้น
 grand_parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 80
-last_modified_date: 2023-06-09 12:00:00 +0700
+last_modified_date: 2023-06-24 12:00:00 +0700
 ---
 
 # {{ page.title }}
@@ -83,9 +83,9 @@ last_modified_date: 2023-06-09 12:00:00 +0700
 	<option value="kiṃ">kiṃ</option>
 </select>
 <span>
-<input type="radio" id="gendm" name="gender-radio" value="m" onChange="pronChange();" checked><label for="gendm">masculine</label>
-<input type="radio" id="gendf" name="gender-radio" value="f" onChange="pronChange();"><label for="gendf">feminine</label>
-<input type="radio" id="gendn" name="gender-radio" value="n" onChange="pronChange();"><label for="gendn">neuter</label>
+<label for="gendm"><input type="radio" id="gendm" name="gender-radio" value="m" onChange="pronChange();" checked> m.</label>&nbsp;
+<label for="gendf"><input type="radio" id="gendf" name="gender-radio" value="f" onChange="pronChange();"> f.</label>&nbsp;
+<label for="gendn"><input type="radio" id="gendn" name="gender-radio" value="n" onChange="pronChange();"> nt.</label>
 </span>
 </div>
 

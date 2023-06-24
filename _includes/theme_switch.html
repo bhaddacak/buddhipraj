@@ -1,0 +1,14 @@
+<ul class="nav-list">
+	<li class="nav-list-item">
+	  <a href="#" class="nav-list-link" onClick="changeTheme();">สลับธีมมืดกับสว่าง</a>
+	</li>
+</ul>
+<script>
+function changeTheme(){
+	const oldTheme = jtd.getTheme();
+	let newTheme = 'dark';
+	if (oldTheme === 'dark' || oldTheme === 'default')
+		newTheme = 'light';
+	jtd.setTheme(newTheme);
+}
+</script>

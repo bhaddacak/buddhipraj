@@ -4,7 +4,7 @@ title: คำนามพิเศษ
 parent: การแต่งประโยคขั้นกลาง
 grand_parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 10
-last_modified_date: 2023-06-09 12:00:00 +0700
+last_modified_date: 2023-06-20 12:00:00 +0700
 ---
 
 # {{ page.title }}
@@ -235,9 +235,9 @@ last_modified_date: 2023-06-09 12:00:00 +0700
 	</optgroup>
 </select>
 <span>
-(<input type="radio" id="gendm5" name="gender-radio" value="m" onChange="optChange('guṇavant',5,true);" checked><label for="gendm5">masculine</label>
-<input type="radio" id="gendf5" name="gender-radio" value="f" onChange="optChange('guṇavant',5,true);"><label for="gendf5">feminine</label>
-<input type="radio" id="gendn5" name="gender-radio" value="n" onChange="optChange('guṇavant',5,true);"><label for="gendn5">neuter</label>) = 
+(<label for="gendm5"><input type="radio" id="gendm5" name="gender-radio" value="m" onChange="optChange('guṇavant',5,true);" checked> m.</label>&nbsp;
+<label for="gendf5"><input type="radio" id="gendf5" name="gender-radio" value="f" onChange="optChange('guṇavant',5,true);"> f.</label>&nbsp;
+<label for="gendn5"><input type="radio" id="gendn5" name="gender-radio" value="n" onChange="optChange('guṇavant',5,true);"> nt.</label>) = 
 </span>
 <span id="guṇavant-meaning"></span>
 </div>

@@ -3,7 +3,7 @@ layout: default
 title: อักษรบาลี
 parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 15
-last_modified_date: 2023-05-27 12:00:00 +0700
+last_modified_date: 2023-06-26 12:00:00 +0700
 ---
 
 # {{ page.title  }}
@@ -51,8 +51,8 @@ y   r   l   v   s   h   ḷ   ṃ
 > With oneself well-trained, [one] gets the guardian hard to obtain. (my translation)
 
 ### Thai-Roman Converter
-<div><input type="text" id="thaipali" placeholder="พิมพ์อักษรไทยบาลี" size="50" onChange="convertLetters();">&nbsp;<span class="fs-3"><button type="button" name="cvbutton" class="btn" onClick="convertLetters();">Convert</button></span></div>
-<div><input type="text" id="romanpali" size="50" readonly>&nbsp;<span class="fs-3"><button type="button" name="cpbutton" class="btn" onClick="copyResult();">Copy</button></span></div>
+<div><input type="text" id="thaipali" placeholder="พิมพ์อักษรไทยบาลี" size="50" onKeyUp="convertLetters();">&nbsp;<span class="fs-3"><button type="button" class="btn" onClick="clearInput();">Clear</button></span></div>
+<div><input type="text" id="romanpali" size="50" readonly>&nbsp;<span class="fs-3"><button type="button" class="btn" onClick="copyResult();">Copy</button></span></div>
 <script>
 const romanVowels = "aāiīuūeo";
 const romanNumbers = [ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' ];
@@ -160,6 +160,10 @@ function convertLetters() {
 	const elmth = document.getElementById("thaipali");
 	const elmrm = document.getElementById("romanpali");
 	elmrm.value = thaiToRoman(elmth.value, true);
+}
+function clearInput() {
+	document.getElementById("thaipali").value = "";
+	document.getElementById("romanpali").value = "";
 }
 function copyResult() {
 	const elmrm = document.getElementById("romanpali");

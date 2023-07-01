@@ -4,7 +4,7 @@ title: สรุปการแปรรูปนาม
 parent: การแต่งประโยคขั้นต้น
 grand_parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 80
-last_modified_date: 2023-06-24 12:00:00 +0700
+last_modified_date: 2023-06-29 12:00:00 +0700
 ---
 
 # {{ page.title }}
@@ -108,12 +108,12 @@ function updateDeclTableNoun(input) {
 	let group = termgen[1];
 	let stem = term.slice(0, term.length-1);
 	const tnumber = 1;
-	for (let i = 0; i < case_abbr.length; i++) {
- 		let cas = case_abbr[i];
-		for (let g = 0; g < gender_abbr.length; g++) {
-			let gen = gender_abbr[g];
-			let elem = document.getElementById(cas+"_"+gen+tnumber);
-			elem.innerHTML = getGenericDeclensionStr(stem, group, i, g);
+	for (let i = 0; i < declension.case_abbr.length; i++) {
+ 		let cas = declension.case_abbr[i];
+		for (let n = 0; n < declension.number_abbr.length; n++) {
+			let num = declension.number_abbr[n];
+			let elem = document.getElementById(cas+"_"+num+tnumber);
+			elem.innerHTML = declension.getGenericDeclensionStr(stem, group, i, n);
 		}
 	}
 	let genElm = document.getElementById("gender");
@@ -140,12 +140,12 @@ function updateDeclTablePron(term) {
 	const cutNum = term.endsWith("ṃ") ? 2 : 1;
 	const stem = term.slice(0, term.length - cutNum);
 	const tnumber = 2;
-	for (let i = 0; i < case_abbr.length; i++) {
- 		let cas = case_abbr[i];
-		for (let g = 0; g < gender_abbr.length; g++) {
-			const gen = gender_abbr[g];
-			const elem = document.getElementById(cas+"_"+gen+tnumber);
-			elem.innerHTML = getPronounDeclensionStr(stem, group, i, g);
+	for (let i = 0; i < declension.case_abbr.length; i++) {
+ 		let cas = declension.case_abbr[i];
+		for (let n = 0; n < declension.number_abbr.length; n++) {
+			const num = declension.number_abbr[n];
+			const elem = document.getElementById(cas+"_"+num+tnumber);
+			elem.innerHTML = declension.getPronounDeclensionStr(stem, group, i, n);
 		}
 	}
 }

@@ -4,7 +4,7 @@ title: คำนามพิเศษ
 parent: การแต่งประโยคขั้นกลาง
 grand_parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 10
-last_modified_date: 2023-06-20 12:00:00 +0700
+last_modified_date: 2023-06-30 12:00:00 +0700
 ---
 
 # {{ page.title }}
@@ -256,6 +256,7 @@ last_modified_date: 2023-06-20 12:00:00 +0700
 	<option value="karonta;a,m:karonta:one who is doing">karonta</option>
 	<option value="arahanta;a,m:arahanta:one worth venerating">arahanta</option>
 	<option value="santa;a,m:santa:righteous person">santa</option>
+	<option value="mahanta;a,m:mahanta:great, big (person)">mahanta</option>
 	</optgroup>
 	<optgroup label="gacchanta">
 	<option value="gacchanta;a,m:gacchanta:one who is going">gacchanta (m.)</option>
@@ -313,12 +314,12 @@ function updateDeclTable(input, code, tnum, useGenRadio) {
 	const index = tEnd === 't'
 				? tGen === 'm' ? group.split(";")[0] + ";t," + tGen : code + ";t," + tGen
 				: group;
-	for (let i = 0; i < case_abbr.length; i++) {
- 		let cas = case_abbr[i];
-		for (let g = 0; g < gender_abbr.length; g++) {
-			let gen = gender_abbr[g];
-			let elem = document.getElementById(cas+"_"+gen+tnumber);
-			elem.innerHTML = getIrrnDeclensionStr(stem, index, i, g);
+	for (let i = 0; i < declension.case_abbr.length; i++) {
+ 		let cas = declension.case_abbr[i];
+		for (let n = 0; n < declension.number_abbr.length; n++) {
+			let num = declension.number_abbr[n];
+			let elem = document.getElementById(cas+"_"+num+tnumber);
+			elem.innerHTML = declension.getIrrnDeclensionStr(stem, index, i, n);
 		}
 	}
 	const meanElm = document.getElementById(code+"-meaning");

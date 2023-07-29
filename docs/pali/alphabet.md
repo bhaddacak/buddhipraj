@@ -3,7 +3,7 @@ layout: default
 title: อักษรบาลี
 parent: บาลีสำหรับคนรุ่นใหม่
 nav_order: 15
-last_modified_date: 2023-06-26 12:00:00 +0700
+last_modified_date: 2023-07-25 12:00:00 +0700
 ---
 
 # {{ page.title  }}
@@ -54,7 +54,7 @@ y   r   l   v   s   h   ḷ   ṃ
 <div><input type="text" id="thaipali" placeholder="พิมพ์อักษรไทยบาลี" size="50" onKeyUp="convertLetters();">&nbsp;<span class="fs-3"><button type="button" class="btn" onClick="clearInput();">Clear</button></span></div>
 <div><input type="text" id="romanpali" size="50" readonly>&nbsp;<span class="fs-3"><button type="button" class="btn" onClick="copyResult();">Copy</button></span></div>
 <script>
-const romanVowels = "aāiīuūeo";
+const romanVowels = "aāiīiuūeo";
 const romanNumbers = [ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' ];
 const romanConsonantsStr = [
 	"k", "kh", "g", "gh", "ṅ",
@@ -63,7 +63,7 @@ const romanConsonantsStr = [
 	"t", "th", "d", "dh", "n",
 	"p", "ph", "b", "bh", "m",
 	"y", "r", "l", "v", "s", "h", "ḷ", "ṃ" ];
-const thaiVowels = [ '\u{0E2D}', '\u{0E32}', '\u{0E34}', '\u{0E35}', '\u{0E38}', '\u{0E39}', '\u{0E40}', '\u{0E42}' ];
+const thaiVowels = [ '\u{0E2D}', '\u{0E32}', '\u{0E34}', '\u{0E35}', '\u{0E36}', '\u{0E38}', '\u{0E39}', '\u{0E40}', '\u{0E42}' ];
 const thaiNumbers = [ '\u{0E50}', '\u{0E51}', '\u{0E52}', '\u{0E53}', '\u{0E54}', '\u{0E55}', '\u{0E56}', '\u{0E57}', '\u{0E58}', '\u{0E59}' ];
 const thaiBindu = '\u{0E3A}';
 const thaiPeriod = '\u{0E2F}';
@@ -105,8 +105,10 @@ function thaiToRoman(input, alsoNumber) {
 			rch = vowelMap[tch];
 		} else if(tch === '\u{0E2D}'){
 			if(index < input.length-1) {
-				if(input[index+1] === '\u{0E32}' || input[index+1] === '\u{0E34}' || input[index+1] === '\u{0E35}' || input[index+1] === '\u{0E38}' || input[index+1] === '\u{0E39}') {
+				if(input[index+1] === '\u{0E32}' || input[index+1] === '\u{0E34}' || input[index+1] === '\u{0E35}' || input[index+1] === '\u{0E36}' || input[index+1] === '\u{0E38}' || input[index+1] === '\u{0E39}') {
 					rch = vowelMap[input[index+1]];
+					if(input[index+1] === '\u{0E36}')
+						rch += "ṃ";
 					skipFlag = true;
 				} else {
 					rch = "a";
@@ -114,7 +116,7 @@ function thaiToRoman(input, alsoNumber) {
 			} else {
 				rch = "a";
 			}
-		} else if(tch === '\u{0E32}' || tch === '\u{0E34}' || tch === '\u{0E35}' || tch === '\u{0E38}' || tch === '\u{0E39}') {
+		} else if(tch === '\u{0E32}' || tch === '\u{0E34}' || tch === '\u{0E35}' || tch === '\u{0E36}' || tch === '\u{0E38}' || tch === '\u{0E39}') {
 			rch = vowelMap[tch];
 		} else {
 			rch = consonantMap[tch];
@@ -130,12 +132,14 @@ function thaiToRoman(input, alsoNumber) {
 					suspendedChar = rch;
 				}
 			}
+		} else if(tch === '\u{0E36}') {
+			output += rch + 'ṃ';
 		} else {
 			output += rch;
 			if(index < input.length-1) {
 				if(input[index+1] === thaiBindu) {
 					skipFlag = true;
-				} else if(consonantMap[tch] != undefined && tch != '\u{0E4D}' && input[index+1] != '\u{0E32}' && input[index+1] != '\u{0E34}' && input[index+1] != '\u{0E35}' && input[index+1] != '\u{0E38}' && input[index+1] != '\u{0E39}') {
+				} else if(consonantMap[tch] !== undefined && tch !== '\u{0E4D}' && input[index+1] !== '\u{0E32}' && input[index+1] !== '\u{0E34}' && input[index+1] !== '\u{0E35}' && input[index+1] !== '\u{0E36}' && input[index+1] !== '\u{0E38}' && input[index+1] !== '\u{0E39}') {
 					if(suspendedChar.length > 0) {
 						output += suspendedChar;
 						suspendedChar = "";
@@ -148,7 +152,7 @@ function thaiToRoman(input, alsoNumber) {
 					output += suspendedChar;
 					suspendedChar = "";
 				} else {
-					if(consonantMap[tch] != undefined && tch != '\u{0E4D}')
+					if(consonantMap[tch] !== undefined && tch !== '\u{0E4D}')
 						output += 'a';
 				}
 			}			

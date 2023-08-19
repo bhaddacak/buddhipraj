@@ -20,6 +20,7 @@ last_modified_date: 2023-08-08 12:00:00 +0700
 <script>
 ncped.url = "{{ site.ncped_url }}";
 ncped.util = bcUtil;
+ncpedHost.util = bcUtil;
 ncpedHost.dict = ncped;
 ncpedHost.blockquote_class = "remark";
 ncpedHost.paliInput = paliInput;
